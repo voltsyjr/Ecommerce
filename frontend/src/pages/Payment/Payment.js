@@ -80,12 +80,12 @@ const Payment = () => {
             };
     
             const result = await axios.post('/payment/success', data);
-            // console.log(result.data)
-            // console.log(result)
+            console.log(result.data)
+            console.log(result)
             setProcessing(false);
-            if(result.statusText=='OK'){
-                // console.log("successfull")
-                // alert(result.data.msg);
+            if(result.statusText=='OK' || result.statusText==''){
+                        console.log("successfull")
+                        // alert(result.data.msg);
                         db.collection("users").doc(user && user.uid).collection("orders").doc(order_id).set({
                             basket: basket,
                             amount: amount,
@@ -98,7 +98,7 @@ const Payment = () => {
                         navigate('/orders');
             }else{
                 console.log("not succesfull")
-                alert(result.data.msg);
+                            alert(result.data.msg);
                             setSucceeded(false);
                             setError(true);
             }
@@ -169,7 +169,7 @@ const Payment = () => {
                     <div className='payment-details'>
                         <form onSubmit={handleSubmit}>
                             <div className='payment-container'>
-                            {error && <p className='invalid'>Card details are invalid</p>}
+                            {/* {error && <p className='invalid'>Card details are invalid</p>} */}
                             <NumberFormat 
                                 renderText={(value) =>(
                                     <>
