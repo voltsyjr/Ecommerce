@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 import ShoppingCartOutlined from '@material-ui/icons/ShoppingCartOutlined'
 import {useDispatch} from "react-redux"
 import { addToBasket } from '../../redux/action'
-
+import star from "../../items/star.png"
 
 const Product = ({id,title,image,price,rating,specification,detail}) => {
     let dispatch=useDispatch();
@@ -25,7 +25,7 @@ const Product = ({id,title,image,price,rating,specification,detail}) => {
                 <strong>{price}</strong>
             </p>
             <div className='rating'>
-                {Array(rating).fill().map((_,index)=><p key={index}>⭐</p>)}
+                {Array(rating).fill().map((_,index)=><p key={index}><img src={star} alt="" /></p>)}
             </div>
         </div>
             <img src={image} alt="" />

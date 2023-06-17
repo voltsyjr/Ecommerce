@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 import './CheckoutProduct.css'
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import { removeFromBasket } from '../../redux/action';
-
+import star from '../../items/star.png'
 const CheckoutProduct=({id,title,image,rating,price,hideButton})=>{
     let dispatch=useDispatch();
     const removeIttemFromBasket=()=>{
@@ -21,7 +21,7 @@ const CheckoutProduct=({id,title,image,rating,price,hideButton})=>{
                 </p>
                 <div className='checkout-product-rating'>
                     {Array(rating).fill().map((_,index)=>(
-                        <p key={index}>⭐</p>
+                        <p key={index}><img src={star} alt="" /></p>
                     ))}
                 </div>
                 {!hideButton && (

@@ -122,7 +122,7 @@ const headerItems = [
   "Fashion",
   "New Releases",
   "Customer Service",
-  "Amazon Pay",
+  "Ecom Pay",
   "Computers",
   "Home & Kitchen",
   "Today's Deals",

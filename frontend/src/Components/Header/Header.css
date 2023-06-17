@@ -1,6 +1,7 @@
 .header{
     height: 60px;
-    background-color: #131921;
+    /* background-color: #131921; */
+    background-color: #5895cb;
     display: flex;
     align-items: center;
     position: sticky;
@@ -13,7 +14,7 @@
     margin-left: 20px;
     object-fit: contain;
     margin-right: 20px;
-    margin-top: 18px;
+    margin-top: 4px;
 }
 
 .header-nav{
@@ -54,7 +55,7 @@
 }
 
 .search > select{
-    height: 41px;
+    height: 42px;
     padding: 5px;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
@@ -64,10 +65,11 @@
 .searchIcon{
     padding: 5px;
     height: 30px !important;
-    background-color: #fcba03;
+    background-color: #99d0ff;
     font-size: 3.2rem !important;
     padding: 5px;
     border-radius: 0 5px 5px 0;
+    margin-bottom: 0.5px;
 }
 
 .searchInput{

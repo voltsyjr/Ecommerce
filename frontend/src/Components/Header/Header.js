@@ -6,6 +6,7 @@ import ShoppingCartOutLinedIcon from "@material-ui/icons/ShoppingCartOutlined"
 import {Link} from "react-router-dom"
 import {useSelector, useDispatch} from "react-redux"
 import { logOutInitiate } from '../../redux/action'
+import logo from "../../ecom_logo.png"
 const Header = () => {
     const { user,basket } = useSelector(state=>state.data);
     let dispatch = useDispatch();
@@ -15,7 +16,7 @@ const Header = () => {
   return (
     <nav className='header'>
         <Link to="/">
-            <img className='header-logo' src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon_logo" />
+            <img className='header-logo' src={logo} alt="amazon_logo" />
         </Link>
         <div className='header-option' style={{marginRight: "-10px"}}>
             <LocationOnOutlinedIcon />

@@ -18,13 +18,19 @@
 .checkout-product-rating{
     display: flex;
 }
+.checkout-product-rating img{
+    width: 15px !important;
+    height: 15px !important;
+}
 .checkout-product-info > button{
-    background: #f0c14b;
+    /* background: #f0c14b; */
     border: 1px solid;
     margin-top: 10px;
     width: 180px;
     color: #111;
-    border-color: #a88734 #9c7e31 #846a29;
+    /* border-color: #a88734 #9c7e31 #846a29; */
+    background-color: #5895cb;
+    border-color: #69a7dd #6f90ad #87c4f8;
 }
 
 i{

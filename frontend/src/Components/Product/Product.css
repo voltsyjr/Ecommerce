@@ -20,11 +20,11 @@
 }
 
 .product > button{
-    background-color: #f0c14b;
     border: 1px solid;
     width: 150px;
     cursor: pointer;
-    border-color: #a88734 #9c7e31 #846129;
+    background-color: #5895cb;
+    border-color: #69a7dd #6f90ad #87c4f8;
 }
 
 .price{
@@ -38,7 +38,10 @@
 .rating{
     display: flex;
 }
-
+.rating img{
+    width: 15px;
+    height: 15px;
+}
 .title{
     color: black;
     font-size: 20px;

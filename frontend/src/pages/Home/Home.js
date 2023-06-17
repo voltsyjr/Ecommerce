@@ -2,12 +2,12 @@ import React from 'react'
 import Header from '../../Components/Header/Header';
 import {headerItems, products} from "../../utils/ProductsData"
 import "./Home.css"
-import Banner1 from "../../BannerImages/Banner1.jpg"
-import Banner2 from "../../BannerImages/Banner2.jpg"
-import Banner3 from "../../BannerImages/Banner3.jpg"
-import Banner4 from "../../BannerImages/Banner4.jpg"
-import Banner5 from "../../BannerImages/Banner5.jpg"
-import Banner6 from "../../BannerImages/Banner6.jpg"
+import Banner1 from "../../BannerImages/b1.jpg"
+import Banner2 from "../../BannerImages/b2.jpg"
+import Banner3 from "../../BannerImages/b4.png"
+import Banner4 from "../../BannerImages/b3.jpg"
+import Banner5 from "../../BannerImages/b5.jpg"
+import Banner6 from "../../BannerImages/b6.jpg"
 import Slider from '../../Components/Slider/Slider';
 import Product from "../../Components/Product/Product"
 import BackToTop from '../../Components/BackToTop/BackToTop';

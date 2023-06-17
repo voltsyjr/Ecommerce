@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import "./Register.css"
 import {Link, useNavigate} from "react-router-dom"
-import AmazonLogo from "../../Amazon_Logo.png";
+import AmazonLogo from "../../ecom_logo.png";
 import { useDispatch, useSelector} from 'react-redux'
 import { registerInitiate } from '../../redux/action';
 const Register = () => {

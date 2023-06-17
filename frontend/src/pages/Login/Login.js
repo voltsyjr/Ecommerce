@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import AmazonLogo from "../../Amazon_Logo.png"
+import AmazonLogo from "../../ecom_logo.png"
 import "./Login.css"
 import {Link, useNavigate} from "react-router-dom"
 import { useSelector, useDispatch } from 'react-redux'
