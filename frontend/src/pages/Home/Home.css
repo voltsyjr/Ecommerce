@@ -30,3 +30,19 @@
     margin-bottom: -150px;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1),rgba(0,0,0,0));
 }
+@media (max-width: 1037px){
+    .item-container{
+        display: none;
+    }
+}
+@media(max-width:670px){
+    /* .item-container p{
+        margin: 10px;
+        font-size: 14px;
+        font-family: Arial,sans-serif;
+    }
+     */
+    .home-row{
+        flex-wrap: wrap;
+    }
+}

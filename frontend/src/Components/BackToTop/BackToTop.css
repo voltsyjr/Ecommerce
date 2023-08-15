@@ -1,9 +1,10 @@
 .scroll-to-top {
     position: fixed;
-    bottom: 0.5rem;
-    right: 0.5rem;
+    bottom: 0rem;
+    left: 1rem;
     animation: fadeIn 700ms ease-in-out 1s both;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 @keyframes fadeIn {
@@ -18,8 +19,13 @@
 .back-top-container {
     height: 40px;
     text-align: center;
-    width: 1373px;
+    width: 100px;
     background-color: #37475a;
     color: white;
     margin-right: 8px;
+}
+@media(max-width:1037px){
+    .back-top-container{
+        width: 100%;
+    }
 }

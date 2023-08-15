@@ -18,10 +18,10 @@ const Header = () => {
         <Link to="/">
             <img className='header-logo' src={logo} alt="amazon_logo" />
         </Link>
-        <div className='header-option' style={{marginRight: "-10px"}}>
+        <div className='header-option loc' style={{marginRight: "-10px"}}>
             <LocationOnOutlinedIcon />
         </div>
-        <div className='header-option'>
+        <div className='header-option add'>
             <span className='header-option1'>Hello</span>
             <span className='header-option2'>Select Your Address</span>
         </div>
@@ -35,7 +35,7 @@ const Header = () => {
         <div className='header-nav'>
             <Link to={`${user ? "/" : "/login"}`} className='header-link'>
                 <div className='header-option' onClick={handleAuth}>
-                <span className='header-option1'>Hello { user ? user.email : "Guest"}</span>
+                <span className='header-option1 em'>Hello { user ? user.email : "Guest"}</span>
                 <span className='header-option2'>{ user ? "Sign Out" : "Sign In"}</span>
                 </div>
             </Link>

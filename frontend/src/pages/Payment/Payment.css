@@ -56,3 +56,20 @@
       color: red;
       padding: 10px;
     }
+    @media(max-width:1037px){
+    h1{
+      margin-top: 40px;
+      background-color: white;
+    }
+    }
+    @media(max-width:500px){
+      .payment-section {
+        flex-wrap: wrap;
+      }
+      .payment-items{
+        flex-wrap: wrap;
+      }
+      .checkout-product{
+        flex-wrap: wrap !important;
+      }
+    }
